@@ -1,7 +1,7 @@
 @import "variables";
 
 body {
-    background-color: $bg-body;
+    background-color: $bg-white;
 }
 
 button {
@@ -11,26 +11,28 @@ button {
 }
 
 #btn-learnMore {
-    background-color: $main-color;
+    background-color: $bg-primary;
     color: $text-color-white;
     padding: $padding-for-lm-btn;
     border: $border-none;
     width: $width-lm-btn;
 
+    &:hover {
+        background-color: $color-lm-for-hover;
+    }
+
 }
 
-#btn-learnMore:hover {
-    background-color: $color-lm-for-hover;
-}
+
 
 #btn-buy {
     color: $text-color-blue;
     padding: $padding-for-buy-btn;
-    border-color: $main-color;
+    border-color: $bg-primary;
     width: $width-buy-btn;
-}
 
-#btn-buy:hover {
-    background-color: $color-buy-for-hover;
-    color: $text-color-white;
+    &:hover {
+        background-color: $color-buy-for-hover;
+        color: $text-color-white;
+    }
 }
